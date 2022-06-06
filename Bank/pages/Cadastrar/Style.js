@@ -13,18 +13,8 @@ export default StyleSheet.create({
         justifyContent: 'center',
         width: '90%',
     },
-    welcome:{
-       color: '#fff',
-       fontSize:25,
-       paddingBottom:20,
-    },
-    logo:{
-        width: '80%',
-        height: '80%',
-    },
     container:{
         flex:1,
-        alignItems:'center',
         justifyContent: 'center',
         width: '90%',
         marginBottom:'3%',
@@ -46,16 +36,18 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius:7,
+        marginTop:10,
     },
     submitText:{
         color: '#FFF',
         fontSize:18,
+        marginBottom:10,
     },
     btnRegister:{
-        marginTop:15,
+        marginTop:10,
     },
     registerText:{
         color: '#FFF',
-        fontSize:15,
     }
 });
+

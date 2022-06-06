@@ -3,33 +3,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import Login from './pages/Login/Login';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from './pages/Home/Home';
-import {View} from 'react-native';
-// import { createDrawerNavigator } from '@react-navigation/drawer';
+import Perfil from './pages/Perfil/Perfil';
+import Cadastrar from './pages/Cadastrar/Cadastrar';
+
 
 const Stack = createStackNavigator();
-
-// const Drawer = createDrawerNavigator(
-//   {
-//     Home: Home,
-//   },
-//   {
-//     contentOptions: {
-//       activeTintColor: 'red',
-//       labelStyle: {
-//         fontSize: 20,
-//       }
-//     }
-//   }
-// );
-
-// function MyDrawer() {
-//   return (
-//     <Drawer.Navigator useLegacyImplementation>
-//       <Drawer.Screen name="Home" component={Home} />
-//     </Drawer.Navigator>
-//   );
-// }
- 
 
 export default function App() {
   return (
@@ -46,6 +24,14 @@ export default function App() {
               options={{
                 headerLeft: null
               }}
+              />
+              <Stack.Screen
+                name="Perfil"
+                component={Perfil}
+              />
+               <Stack.Screen
+                name="Cadastrar"
+                component={Cadastrar}
               />
         </Stack.Navigator>
       </NavigationContainer>
